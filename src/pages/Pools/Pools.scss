@@ -1,0 +1,363 @@
+.Pools-container {
+  display: flex;
+  font-family: 'Poppins';
+  background: #150014;
+  background-image: url(../../images/pools/pools-page-background.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  background-position: start;
+  // position: relative;
+  // width: 100%;
+  height: 100%;
+  padding-top: 40px;
+
+  .default-container {
+    padding-left: 6% !important;
+    padding-right: 6% !important;
+    max-width: none !important;
+    margin: 0 0 100px 0 !important;
+  }
+
+  .page-layout {
+
+    padding-bottom: 0 !important;
+  }
+
+  .section-title-block {
+    justify-content: space-between;
+    max-width: none !important;
+  }
+
+  .section-title-block {
+    .section-title-btn-container {
+
+      display: flex;
+      align-items: center;
+
+      .section-title-buy-sell-container {
+        display: flex;
+        min-width: 274px;
+
+        button {
+          font-family: 'Poppins';
+          padding: 13.5px 28px;
+          background: #9917CC;
+          border-radius: 8px;
+          cursor: pointer;
+          // font-weight: 700;
+          border: none;
+          line-height: 24px;
+          text-align: center;
+          text-transform: uppercase;
+          font-style: normal;
+          margin-left: 20px;
+          color: white;
+        }
+      }
+
+      .section-title-liquidity-container {
+        min-width: 175px;
+        margin-left: 20px;
+
+        p {
+          padding: 13.5px 28px;
+          background: rgba(0, 0, 0, 0.44078);
+          border-radius: 8px;
+          mix-blend-mode: normal;
+          border: 2px solid rgb(255, 255, 255, 0.3);
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 24px;
+          cursor: pointer;
+        }
+      }
+    }
+
+
+  }
+
+  .pool-overview-contrainer {
+    margin-top: 30px;
+
+    p {
+      margin: 0;
+    }
+
+    .pool-overview-title {
+      p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        text-transform: uppercase;
+        text-align: start;
+      }
+    }
+
+    .pool-overview-content {
+
+      margin: 25px 0;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+
+      .pool-statistics-card {
+        display: flex;
+        flex-direction: column;
+        padding: 21px;
+        background: rgba(255, 255, 255, 0.0321753);
+        border: 3px solid rgba(255, 255, 255, 0.0545484);
+        backdrop-filter: blur(6.7957px);
+        border-radius: 12px;
+        gap: 8px;
+        width: 100%;
+        font-family: 'Poppins';
+        font-style: normal;
+
+        .pool-statistics-card-title {
+          display: flex;
+          align-items: center;
+
+          p {
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 30px;
+            mix-blend-mode: normal;
+            opacity: 0.6;
+            text-align: start;
+            display: flex;
+            align-items: center;
+            gap: 7px;
+          }
+
+          a {
+            height: 14px;
+            margin-left: 6px;
+            cursor: pointer;
+          }
+        }
+
+        .pool-statistics-card-content {
+          display: flex;
+          justify-content: space-between;
+          height: 39px;
+
+          p:first-child {
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 39px;
+          }
+
+          p:last-child {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 27px;
+            color: #9917CC;
+            align-self: center;
+            cursor: pointer;
+          }
+        }
+
+      }
+    }
+  }
+
+  .PositionEditor-token-symbol {
+    background: none;
+  }
+
+  .liquidity-info-container {
+
+    .Modal-content {
+      background: #432541;
+      box-shadow: 0px 0px 12px rgba(23, 0, 22, 0.356302);
+      border-radius: 8px;
+
+      .Modal-title-bar {
+        display: none;
+      }
+
+      .divider {
+        display: none;
+      }
+
+      .liquidity-info-title {
+
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 16px;
+          height: 16px;
+
+        }
+
+        p {
+          margin-left: 6px;
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 24px;
+          /* identical to box height */
+
+
+          color: #FFFFFF;
+        }
+      }
+
+      .liquidity-info-content {
+
+        font-family: 'Poppins';
+        line-height: 21px;
+        font-size: 14px;
+        font-weight: 275;
+        color: rgba(255, 255, 255, 0.6);
+        width: 391px;
+
+        span {
+          color: white;
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 700;
+          // font-size: 16px;
+          line-height: 24px;
+        }
+      }
+
+    }
+  }
+}
+
+.StakeV2 .Page-title-section {
+  position: relative;
+  z-index: 2;
+}
+
+.VesterDepositModal-info-rows {
+  margin-bottom: 0.8rem;
+}
+
+.CompoundModal-menu {
+  margin-bottom: 0.8rem;
+}
+
+.CompoundModal-menu .Checkbox {
+  margin-bottom: 0.465rem;
+}
+
+.StakeV2-address-input {
+  padding: 1.5rem 3.41rem;
+  padding-bottom: 0;
+}
+
+.StakeV2-buy-gmx-modal .Modal-content {
+  max-width: 46.5rem;
+}
+
+.StakeV2-address-input input {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 1.7rem;
+}
+
+.StakeV2-boost-bar {
+  overflow: hidden;
+  vertical-align: middle;
+  margin-left: 0.31rem;
+  border-radius: 2px;
+  width: 1.5rem;
+  height: 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: inline-block;
+  position: relative;
+}
+
+.StakeV2-boost-icon {
+  font-size: 1.085rem;
+  z-index: 2;
+}
+
+.StakeV2-boost-bar-fill {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.StakeV2-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .StakeV2-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .StakeV2-content {
+    min-height: 100vh;
+  }
+
+  .StakeV2-total-rewards-card {
+    grid-row: 4;
+  }
+
+  .Pools-container {
+    .section-title-block {
+      flex-direction: column;
+
+      .section-title-content {
+        text-align: center;
+      }
+
+      .section-title-btn-container {
+        margin-top: 20px;
+        flex-direction: column;
+
+        .section-title-buy-sell-container {
+          p {
+            width: 160px;
+          }
+
+          p:first-child {
+            margin-left: 0;
+          }
+        }
+
+        .section-title-liquidity-container {
+          margin-left: 0;
+
+          p {
+            width: 340px;
+            margin-top: 0;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .pool-overview-contrainer {
+      .pool-overview-title {
+        p {
+          text-align: center;
+        }
+      }
+
+      .pool-overview-content {
+        flex-direction: column;
+        align-items: center;
+
+        .pool-statistics-card {
+
+          max-width: 370px;
+        }
+      }
+    }
+  }
+}

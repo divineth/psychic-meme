@@ -1,0 +1,156 @@
+.DashboardV2-projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  width: 100%;
+  margin-top: 50px;
+}
+
+@media (max-width: 900px) {
+  .DashboardV2-projects {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .DashboardV2-projects {
+    justify-items: center;
+  }
+  .default-container {
+    padding-left: 0.1rem !important;
+    padding-right: 0.1rem !important;
+  }
+
+  .section-title-block {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .Page-title {
+    font-size: 30px !important;
+  }
+
+  .Ecosystem-card {
+    max-width: 360px;
+  }
+
+  .Ecosystem-content {
+    padding-inline-start: 5px !important;
+    padding-inline-end: 5px !important;
+    font-size: 14px !important;
+  }
+
+
+  .Ecosystem-content p {
+    display: flex !important;
+  }
+
+  .Ecosystem-content-divider {
+    margin-inline-start: 5px !important;
+    margin-inline-end: 5px !important;
+  }
+
+
+  .Ecosystem-title-container {
+    padding-left: 5px !important;
+  }
+}
+
+
+.Ecosystem {
+  background: #150014;
+  background-image: url("../../images/ecosystem/ecosystem-page-background.svg");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  padding-top: 30px;
+
+  .page-layout {
+    padding-bottom: 80px !important;
+  }
+}
+
+.Ecosystem p {
+  margin: 0px;
+}
+
+.Ecosystem .mt-50 {
+  margin-top: 50px;
+}
+
+.Ecosystem-card {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.12);
+  border: 3px solid rgba(255, 255, 255, 0.0545484);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  width: 100%;
+  font-family: 'Poppins';
+  font-style: normal;
+}
+
+.Ecosystem-title-container {
+  display: flex;
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-bottom: 21.5px;
+  gap: 10px;
+}
+
+.Ecosystem-title-container img {
+  width: 60px;
+  height: 60px;
+}
+
+.Ecosystem-name {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 7px;
+}
+
+.Ecosystem-description {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+
+.Ecosystem-divider {
+  display: flex;
+  width: 100%;
+  border-top: 1px dashed #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.2;
+}
+
+.Ecosystem-content {
+  display: flex;
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+
+.Ecosystem-content a {
+  cursor: pointer;
+  text-decoration: underline;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  color: #1979FF;
+
+}
+
+.Ecosystem-content-divider {
+  display: flex;
+  margin-inline-start: 19.5px;
+  margin-inline-end: 19.5px;
+}

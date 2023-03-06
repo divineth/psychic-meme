@@ -1,0 +1,215 @@
+.TokenSelector .Modal .Modal-content {
+  width: 31rem;
+  margin: 0;
+  max-height: 100vh;
+}
+
+.TokenSelector-token-name {
+  margin-right: 1.5rem;
+}
+
+.TokenSelector.disabled {
+  pointer-events: none;
+}
+
+.TokenSelector.disabled .TokenSelector-caret {
+  display: none;
+}
+
+.TokenSelector-box .Token-balance {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.TokenSelector-caret {
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 0.465rem;
+  font-size: var(--font-lg);
+  margin-top: -0.465rem;
+  opacity: 0.6;
+}
+
+.TokenSelector {
+  position: relative;
+
+  .token-selctor-dropdown-button {
+    .TokenSelector-box {
+      display: block;
+      cursor: pointer;
+      border-radius: 0.6rem;
+      text-align: right;
+      white-space: nowrap;
+      width: 140px;
+
+      &:hover {
+        color: #7885ff;
+      }
+    }
+  }
+
+  .menu-items {
+    min-width: 90px;
+    width: 140px;
+    top: 50px;
+    right: 0;
+
+    .TokenSelector-token-row {
+      cursor: pointer;
+      position: relative;
+      background: transparent;
+      border-radius: var(--border-radius-sm);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 0.8rem;
+
+
+      .Token-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .token-logo {
+          display: block !important;
+          width: 2.5rem;
+          height: 2.5rem;
+          margin-right: 2px;
+          margin-left: 0 !important;
+        }
+
+        .Token-symbol {
+          margin-left: 0.8rem;
+          display: flex;
+          flex-direction: column;
+
+          .Token-text {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 39px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+.TokenSelector-tooltip.Tooltip {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.TokenSelector-tooltip-backing {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.TokenSelector-token-row.disabled {
+  cursor: not-allowed;
+}
+
+.TokenSelector-token-row.disabled .Token-info {
+  opacity: 0.3;
+}
+
+.TokenSelector-token-row.disabled .Token-balance {
+  opacity: 0.3;
+}
+
+.TokenSelector-token-row.TokenSelector-token-input-row {
+  padding: 0;
+}
+
+.TokenSelector-token-row input {
+  padding: 0.8rem;
+  width: 100%;
+}
+
+.TokenSelector-token-row:hover {
+  background: rgb(30, 0, 27) !important;
+}
+
+.TokenSelector-token-row:active {
+  background: var(--dark-blue-active);
+}
+
+.TokenSelector.right .Modal {
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.text-accent {
+  color: var(--dark-blue-accent);
+  font-size: 1.2rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.TokenSelector.right .Modal-content {
+  position: absolute;
+  width: 35.65rem;
+  top: 0;
+  bottom: 0;
+  overflow: auto;
+  border: none;
+}
+
+@media (max-width: 700px) {
+  .TokenSelector.right .Modal {
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 3.1rem;
+    top: 0;
+    right: 3.1rem;
+    bottom: 0;
+  }
+
+  .Token-info .token-logo {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 0.8rem;
+  }
+}
+
+.token-selctor-wrapper {
+  border-radius: 25px;
+  background: #3C2B4B;
+
+  .token-selctor-dropdown-button {
+    .TokenSelector-box {
+      width: 110px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 18px;
+      text-align: center;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  .menu-items {
+    min-width: 90px;
+    width: 110px;
+    top: 35px;
+  }
+}

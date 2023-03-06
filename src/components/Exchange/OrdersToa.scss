@@ -1,0 +1,73 @@
+.Orders-toa .Modal-content {
+  width: 36rem;
+  font-size: var(--font-base);
+  background: #330C30;
+  box-shadow: 0px 5px 32px rgba(0, 0, 0, 0.274411);
+  border-radius: 15px;
+
+  .Modal-title-bar {
+    justify-content: center;
+    display: flex;
+    position: relative;
+
+    .Modal-title {
+      font-family: Poppins;
+      font-size: 16px;
+      margin: 15px 0;
+    }
+
+    .Modal-close-button {
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .Modal-body {
+    .modal-first-component {
+      background: #4C1648;
+      padding: 15px 20px;
+      font-family: Poppins;
+      font-size: 14px;
+      margin: 15px 0;
+
+      ul {
+        li {
+          font-family: Poppins;
+        }
+      }
+    }
+  }
+
+  .Confirmation-box-button {
+    background: #9917CC;
+    border-radius: 8px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 20px;
+  }
+}
+
+.Orders-toa-accept-rules {
+  margin-top: 0.31rem;
+  font-family: Poppins;
+
+  .Checkbox {
+    width: 100%;
+    font-size: var(--font-sm);
+    margin-bottom: 0.465rem;
+
+    .Checkbox-label {
+      margin-right: 0.8rem;
+    }
+  }
+}
